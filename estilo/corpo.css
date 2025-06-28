@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*Este arquivo CSS foi feito para a estilização geral dos corpos da página*/
+
+main{
+    height: 60%;
+    width: 100%;
+}
+body,main,form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main section{
+    width: 80%;
+    margin: auto;
+    text-indent: 8px;
+    text-align: justify;
+    text-align-last: center;
+}
+img{
+    width: 60%;
+    margin:auto;
+    max-width: 320px;
+}
+
+footer{
+    color: #fff;
+    background-color: #393E59;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -3px 2px #8d8d8dc4;
+}
+
+/*Parte da edição do estilo do formulário*/
+
+form{
+    width: 70%;
+    align-items: center;
+    margin: auto;
+}
+
+.botao{
+    width: 60px;
+    height: 1.6em;
+}
+
+.textocorpo{
+    color: #000;
+    text-decoration: underline;
+}
+
+/*Diferentes tamanhos de tela*/
+
+@media screen and (min-width: 931px){
+    main{
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+    }
+    main section{
+        width: 40%;
+    }
+    p{
+        line-height: 30px;
+    }
+    .textao{
+        width: 300px;
+    }
+}

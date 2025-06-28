@@ -1,0 +1,96 @@
+/*
+    Estilização do menu da página
+    e criação de fontes
+*/
+
+@charset "utf-8";
+@font-face {
+    font-family: 'opensans';
+    src: url('font/Open_Sans/OpenSans-VariableFont_wdth_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'rileway';
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+    --menu: #393E59;
+    --fontemenu: #fff;
+}
+/*Remover as bordas e margens dos elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/*Estilização do Menu*/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 3px 2px #8d8d8dc4;
+}
+
+body{
+    font-family: 'opensans', Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--menu);
+    width: 100%;
+    height: 18%;
+    color: var(--fontemenu);
+}
+header nav {
+    padding-left: 10px;
+}
+header nav ul{
+    float: left;
+}
+header nav ul li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: var(--fontemenu);
+}
+a:hover, .atual{
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+/*Responsividade em diferentes telas*/
+
+@media screen and (max-width: 930px) {
+    header{
+        height: 28%;
+    }
+    h1{
+        font-size: 35px;
+    }
+    nav,ul{
+        width: 100%;
+    }
+    header nav {
+        padding-left: 0px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 931px){
+    header nav ul li{
+        margin-left: 10px;
+    }
+}
